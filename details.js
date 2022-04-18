@@ -31,7 +31,7 @@ window.onload = async () => {
             style="object-fit: contain;"
           />
           <p class="text-center">${movie.description}</p>
-           <a href="./backoffice.html?productID=${movie._id}" class="btn btn-dark float-right">EDIT</a>`
+           <a href="./backoffice.html?movieID=${movie._id}" class="btn btn-dark float-right">EDIT</a>`
   row.appendChild(h1)
   row.appendChild(col)
 }
