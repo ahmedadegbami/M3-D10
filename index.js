@@ -43,7 +43,6 @@ window.onload = () => {
   loadMovies('horror')
   loadMovies('romantic')
   loadMovies('action')
-  loadMovies('action')
 }
 
 const dropDown = document.querySelector('.genre-dropdown')
