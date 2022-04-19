@@ -62,7 +62,7 @@ let postMovies = async (event) => {
           'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2YmZhNWE5MDIzOTAwMTVkOTY1ZGIiLCJpYXQiOjE2NDk4NTIzMjUsImV4cCI6MTY1MTA2MTkyNX0.byIP9sGJBEu1KNeVEtoF2tsWgEOtohWDDZd-GgY2rUQ',
       },
     }
-    let response = await fetch(endpoint, option)
+    let response = await fetch(endpoint, { method, headers })
 
     if (response.ok) {
       let movies = await response.json()
@@ -109,8 +109,4 @@ let deleteMovie = () => {
       console.log(res)
       window.location.assign('/')
     })
-}
-
-let validated = (event) => {
-  event.target.form.classList.add('validate')
 }
